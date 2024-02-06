@@ -30,10 +30,12 @@ public class Items {
             } else {
                 answer = "No";
             }
-        }return answer;
+
+        }
+        return answer;
     }
 
-    public static String finalOutput (String[] items, double[] prices, int[] itemsIDs){ // How to fix this output?
+    public static String finalOutput (String[] items, double[] prices, int[] itemsIDs){
         String result = "";
         for (int i = 0; i < items.length; i++) {
             result = items[i] + " - $" + prices[i] + " - " + itemsIDs[i];
