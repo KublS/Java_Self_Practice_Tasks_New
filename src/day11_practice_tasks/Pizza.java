@@ -1,9 +1,9 @@
 package day11_practice_tasks;
 
 public class Pizza {
-    String size;
-    int numberOfCheeseToppings, numberOfPepperoniToppings;
-    double cost;
+    public String size;
+    public int numberOfCheeseToppings, numberOfPepperoniToppings;
+    public double cost;
 
 
     public Pizza() {

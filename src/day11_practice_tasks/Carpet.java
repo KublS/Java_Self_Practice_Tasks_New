@@ -2,9 +2,9 @@ package day11_practice_tasks;
 
 public class Carpet {
 
-    double width, length, unitPrice;
-    boolean isPersian;
-    double cost;
+    public double width, length, unitPrice;
+    public boolean isPersian;
+    public double cost;
 
     public Carpet(double width, double length, double unitPrice, boolean isPersian) {
         this.width = width;

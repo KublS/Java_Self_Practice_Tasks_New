@@ -2,12 +2,12 @@ package day11_practice_tasks;
 
 public class Employee {
 
-    String name, jobTitle;
-    int age;
-    char gender;
-    double salary;
+    public String name, jobTitle;
+    public int age;
+    public char gender;
+    public double salary;
 
-    String workingStatus;
+    public String workingStatus;
 
     public Employee() {
         System.out.println("No valid info!");
