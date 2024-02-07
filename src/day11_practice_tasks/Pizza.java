@@ -29,7 +29,7 @@ public class Pizza {
 
     }
 
-    public static double calcCost (String size, int numberOfCheeseToppings, int numberOfPepperoniToppings){
+    public double calcCost (String size, int numberOfCheeseToppings, int numberOfPepperoniToppings){
         double totalCost = 0.0;
         switch (size.toLowerCase()){
             case "small" -> totalCost = 10 + 2 * numberOfCheeseToppings + 2*numberOfPepperoniToppings;

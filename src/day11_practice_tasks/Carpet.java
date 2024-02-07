@@ -14,7 +14,7 @@ public class Carpet {
         this.cost = calcCost(width, length, unitPrice, isPersian);
     }
 
-    public static double calcCost (double width, double length, double unitPrice, boolean isPersian){
+    public double calcCost (double width, double length, double unitPrice, boolean isPersian){
         double totalCost = 0.0;
         if (isPersian == true){
             totalCost = (width * length) * unitPrice + 200;
