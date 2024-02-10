@@ -1,0 +1,22 @@
+package day13_practice_tasks;
+
+public class GraduateStudent extends Student1{
+
+
+    public GraduateStudent(String name, int age, String gender, String studentId, String fieldOfStudy, char grade, String schoolName) {
+        super(name, age, gender, studentId, fieldOfStudy, grade, schoolName);
+    }
+
+    @Override
+    public void study() {
+        super.study();
+    }
+    public void walking(){
+        System.out.println(getName() + " is walking on campus");
+    }
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
+}
