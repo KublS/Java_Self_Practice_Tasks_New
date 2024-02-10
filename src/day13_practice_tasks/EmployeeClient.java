@@ -26,6 +26,7 @@ public class EmployeeClient {
         System.out.println(teacher);
         teacher.work();
         System.out.println(teacher.getEmployeeId());
+        System.out.println(teacher.getSalary());
 
         System.out.println("-----------------------");
 
