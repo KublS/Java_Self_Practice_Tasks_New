@@ -30,17 +30,21 @@ public class IPhone {
     }
 
     public void setBrand(String brand) {
-        if (brand.isEmpty() || brand.isBlank() || brand == null){
-            System.out.println("Wrong input in the: BRAND");
-            System.exit(1);
+        if (brand == null){
+            throw new RuntimeException("Wrong input in the: BRAND");
+        }
+        if (brand.isEmpty() || brand.isBlank()){
+            throw new RuntimeException("Wrong input in the: BRAND");
         }
         this.brand = brand;
     }
 
     public void setModel(String model) {
-        if (model.isEmpty() || model.isBlank() || model == null){
-            System.out.println("Wrong input in the: MODEL");
-            System.exit(1);
+        if (model == null){
+            throw new RuntimeException("Wrong input in the: MODEL");
+        }
+        if (model.isEmpty() || model.isBlank()){
+            throw new RuntimeException("Wrong input in the: MODEL");
         }
         this.model = model;
     }
@@ -51,16 +55,17 @@ public class IPhone {
 
     public void setPrice(double price) {
         if (price <= 0){
-            System.out.println("Price can not be negative or 0!");
-            System.exit(1);
+            throw new RuntimeException("Price can not be negative or 0!");
         }
         this.price = price;
     }
 
     public void setColor(String color) {
-        if (color.isEmpty() || color.isBlank() || color == null){
-            System.out.println("Wrong input in the: COLOR");
-            System.exit(1);
+        if (color == null){
+            throw new RuntimeException("Wrong input in the: COLOR");
+        }
+        if (color.isEmpty() || color.isBlank()){
+            throw new RuntimeException("Wrong input in the: COLOR");
         }
         this.color = color;
     }
