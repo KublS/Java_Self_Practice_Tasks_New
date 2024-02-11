@@ -7,7 +7,7 @@ public class Florida extends State{
         setAverageTemperature(averageTemperature);
     }
 
-    private int averageTemperature = 75;
+    private int averageTemperature;
 
     public int getAverageTemperature() {
         return averageTemperature;
