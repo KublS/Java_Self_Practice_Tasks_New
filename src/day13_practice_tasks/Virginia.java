@@ -20,7 +20,7 @@ public class Virginia extends State {
     }
 
     public void votes(){
-        System.out.println(super.getName() + " is vote in January");
+        System.out.println(getName() + " is vote in January");
     }
 
     public void partyMembersMeeting(){

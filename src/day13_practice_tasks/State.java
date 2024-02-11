@@ -34,44 +34,53 @@ public class State {
     }
 
     public void setName(String name) {
-        if ( name.isEmpty() || name.isBlank() || name == null){
-            System.out.println("Invalid input in the: NAME");
-            System.exit(1);
+        if (name == null){
+            throw new RuntimeException("Invalid input in the: NAME");
+        }
+        if ( name.isEmpty() || name.isBlank()){
+            throw new RuntimeException("Invalid input in the: NAME");
         }
         this.name = name;
     }
     public void setAbbreviation(String abbreviation) {
-        if ( abbreviation.isEmpty() || abbreviation.isBlank() || abbreviation == null){
-            System.out.println("Invalid input in the: Abbreviation");
-            System.exit(1);
+        if (abbreviation == null){
+            throw new RuntimeException("Invalid input in the: Abbreviation");
+        }
+        if ( abbreviation.isEmpty() || abbreviation.isBlank()){
+            throw new RuntimeException("Invalid input in the: Abbreviation");
         }
         this.abbreviation = abbreviation;
     }
     public void setPoliticalParty(String politicalParty) {
-        if ( politicalParty.isEmpty() || politicalParty.isBlank() || politicalParty == null){
-            System.out.println("Invalid input in the: POLITICAL PARTY");
-            System.exit(1);
+        if (politicalParty == null){
+            throw new RuntimeException("Invalid input in the: POLITICAL PARTY");
+        }
+        if ( politicalParty.isEmpty() || politicalParty.isBlank()){
+            throw new RuntimeException("Invalid input in the: POLITICAL PARTY");
         }
         this.politicalParty = politicalParty;
     }
     public void setGovernor(String governor) {
-        if ( governor.isEmpty() || governor.isBlank() || governor == null){
-            System.out.println("Invalid input in the: GOVERNOR");
-            System.exit(1);
+        if (governor == null){
+            throw new RuntimeException("Invalid input in the: GOVERNOR");
+        }
+        if ( governor.isEmpty() || governor.isBlank()){
+            throw new RuntimeException("Invalid input in the: GOVERNOR");
         }
         this.governor = governor;
     }
     public void setSenator(String senator) {
-        if ( senator.isEmpty() || senator.isBlank() || senator == null){
-            System.out.println("Invalid input in the: Senator");
-            System.exit(1);
+        if (senator == null){
+            throw new RuntimeException("Invalid input in the: Senator");
+        }
+        if ( senator.isEmpty() || senator.isBlank()){
+            throw new RuntimeException("Invalid input in the: Senator");
         }
         this.senator = senator;
     }
     public void setPopulation(int population) {
         if (population < 1){
-            System.out.println("Invalid input in the: POPULATION");
-            System.exit(1);
+           throw new RuntimeException("Invalid input in the: POPULATION");
         }
         this.population = population;
     }

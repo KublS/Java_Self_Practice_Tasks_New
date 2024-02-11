@@ -20,7 +20,7 @@ public class StateClients {
                 "Robert Gover", "Maya Power", 21_450_000);
         System.out.println(california);
         california.celebrates();
-        System.out.println(california.capital);
+        System.out.println(california.getCapital());
         System.out.println(california.getAbbreviation());
         california.votes();
 
@@ -39,7 +39,8 @@ public class StateClients {
         Florida florida = new Florida("Florida", "FL", "democrats",
                 "Gina Polaris", "John Smith", 31_001_006);
         System.out.println(florida);
-        System.out.println(florida.averageTemperature);
+        florida.setAverageTemperature(109);
+        System.out.println(florida.getAverageTemperature());
         florida.festivals();
         System.out.println(florida.getPopulation());
 
