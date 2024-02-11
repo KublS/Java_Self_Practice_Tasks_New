@@ -23,9 +23,11 @@ public class Student {
     }
 
     public void setName(String name) {
-        if ( name.isEmpty() || name.isBlank() || name == null){
-            System.err.println("Invalid input in the: NAME");
-            System.exit(1);
+        if (name == null){
+            throw new RuntimeException("Invalid input in the: NAME");
+        }
+        if ( name.isEmpty() || name.isBlank()){
+            throw new RuntimeException("Invalid input in the: NAME");
         }
         this.name = name;
     }
@@ -37,9 +39,11 @@ public class Student {
         this.age = age;
     }
     public void setGender(String gender) {
-        if ( gender.isEmpty() || gender.isBlank() || gender == null){
-            System.err.println("Invalid input in the: NAME");
-            System.exit(1);
+        if (gender == null){
+            throw new RuntimeException("Invalid input in the: NAME");
+        }
+        if ( gender.isEmpty() || gender.isBlank()){
+            throw new RuntimeException("Invalid input in the: NAME");
         }
         this.gender = gender;
     }

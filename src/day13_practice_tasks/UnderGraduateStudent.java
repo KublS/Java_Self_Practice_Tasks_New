@@ -14,7 +14,7 @@ public class UnderGraduateStudent extends Student1{
     }
     @Override
     public void study(){
-        System.out.println(getName() + " is studying in " + getSchoolName());
+        super.study();
     }
 
     public void skipClasses (){
