@@ -10,10 +10,39 @@ public class RemovePalindromes {
         list.addAll(Arrays.asList("Java", "Python", "Cydeo", "Car", "Level", "civic", "radar", "kayak",
                 "reviver", "racecar", "madam")
         );
+        Iterator<String> it = list.iterator();
+        while (it.hasNext()) {
+            String str = it.next();
+            if (isPalindrome(str)) {
+                it.remove();
+            }
+        }
+        System.out.println(list);
+    }
 
-        ArrayList<String> list2 = new ArrayList<>();
 
-        for (String eachElement : list) {
+    public static boolean isPalindrome (String str){
+        String strLowerCase = str.toLowerCase();
+        String reverse = new StringBuilder(str).reverse().toString();
+        return strLowerCase.equalsIgnoreCase(reverse);
+
+    }
+
+
+}
+/*
+for (int i = 0; i < eachElement.toCharArray().length; i++) {
+                Stack<Character> stack1 = new Stack<>();
+                stack1.push(e)
+
+            }
+            for (int i = eachElement.toCharArray().length - 1; i >= 0; i--) {
+
+            }
+            list.remove(eachElement);
+ */
+
+/* for (String eachElement : list) {
             ArrayList<Character> flow = new ArrayList<>();
             for (int i = 0; i < eachElement.toCharArray().length; i++) {
                 flow.add(eachElement.charAt(i));
@@ -30,18 +59,5 @@ public class RemovePalindromes {
 
         }
         System.out.println(list);
-    }
 
-
-}
-/*
-for (int i = 0; i < eachElement.toCharArray().length; i++) {
-                Stack<Character> stack1 = new Stack<>();
-                stack1.push(e)
-
-            }
-            for (int i = eachElement.toCharArray().length - 1; i >= 0; i--) {
-
-            }
-            list.remove(eachElement);
- */
+        */
